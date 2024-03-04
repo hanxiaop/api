@@ -179,6 +179,8 @@ message IstioComponentSetSpec {
     repeated GatewaySpec ingressGateways = 40;
     repeated GatewaySpec egressGateways = 41;
 
+    repeated GatewaySpec helmGateways = 43;
+
     reserved 31, 32, 33, 34, 35, 36, 37;
     reserved "citadel", "policy", "telemetry", "galley", "node_agent", "proxy", "sidecar_injector";
 }
